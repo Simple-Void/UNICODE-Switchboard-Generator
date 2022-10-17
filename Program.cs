@@ -12,7 +12,7 @@ int totalVals = 0;
 string filePath = @"C:\Users\Public\Switchboard_Generator";
 Directory.CreateDirectory(filePath) ;
 
-filePath = @"C:\Users\Public\Switchboard_Generator\Unicode_Switchboard.txt";
+filePath = @"C:\Users\Public\PRINCEWARE\SWTCHBRDS\Unicode_Switchboard.txt";
 using (StreamWriter w = File.AppendText(filePath)) ;
 //it now exists whether or not it did before idk
 //delete it to wipe
@@ -56,7 +56,6 @@ for (int i = 0; i <= totalVals; i++)
 {
     using StreamWriter file = new(filePath, append: true);
     //current val
-    file.WriteLine(i.ToString());
     file.WriteLine(UnicodeSwitchboard[i].ToString());
 }
 Environment.Exit(0);
