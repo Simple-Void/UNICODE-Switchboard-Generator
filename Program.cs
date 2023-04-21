@@ -10,7 +10,7 @@ int totalVals = 0;
 //ensure the file exists for it to write the new switchboard to
 
 string filePath = @"C:\Users\Public\Switchboard_Generator";
-Directory.CreateDirectory(filePath) ;
+Directory.CreateDirectory(filePath);
 
 filePath = @"C:\Users\Public\PRINCEWARE\SWTCHBRDS\Unicode_Switchboard.txt";
 using (StreamWriter w = File.AppendText(filePath)) ;
@@ -46,7 +46,7 @@ for (int i = 0; i <= totalVals; i++)
         {
             Console.Write($"{randInt} was not valid, trying again ; ");
         }
-    } while (valid == false);
+    } while (!valid);
 }
 Console.WriteLine("generation complete, when you hit enter the file write will commence..");
 Console.ReadKey(true);
